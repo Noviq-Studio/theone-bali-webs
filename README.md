@@ -142,10 +142,18 @@ Formulario embebido fuera del modal (lo usa el hero de V3):
 Cada variante es una web **estática**: HTML, CSS, JS e imágenes. No hay backend,
 base de datos ni build de Node. Sirve cualquier hosting estático.
 
-**Ver las tres en línea sin instalar nada:** hay una vista previa en GitHub Pages
-(rama `gh-pages`): <https://noviq-studio.github.io/theone-bali-webs/>. Desde ahí
-`/v1-editorial/`, `/v2-cinematic/` y `/v3-investor/` (y sus `/en/` y `/de/`).
-Tras cambiar algo en `main`, ejecuta `./publish-pages.sh` para actualizarla.
+**Vista previa en GitHub Pages:** la rama `gh-pages` ya contiene las tres webs con los
+assets resueltos. GitHub Pages sólo está disponible si el repo es **público** (o con plan
+de pago). Si se hace público: *Settings → Pages → Branch: gh-pages* y la URL será
+<https://noviq-studio.github.io/theone-bali-webs/> con `/v1-editorial/`, `/v2-cinematic/`
+y `/v3-investor/` (y sus `/en/` y `/de/`). Tras cambiar algo en `main`, ejecuta
+`./publish-pages.sh` para actualizarla.
+
+**Vista previa en local (sin publicar nada):**
+
+```bash
+python3 -m http.server 8099   # y abre http://localhost:8099/
+```
 
 **Publicar UNA variante en un dominio propio:**
 
