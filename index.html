@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The One Bali — comparador de variantes</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0d0f13;--card:#161920;--line:#252a34;--fg:#f1f2f4;--fg2:#9aa1ad;--accent:#7c9cff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{width:min(1080px,100% - 48px);margin:0 auto;padding:72px 0 80px}
+  h1{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800;letter-spacing:-.035em;margin:0 0 10px}
+  .sub{color:var(--fg2);max-width:62ch;margin:0 0 44px}
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;display:grid;align-content:start;gap:12px;transition:border-color .2s,transform .2s}
+  .card:hover{border-color:var(--accent);transform:translateY(-3px)}
+  .tag{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+  .card h2{font-size:1.2rem;font-weight:700;letter-spacing:-.02em;margin:0}
+  .card p{color:var(--fg2);font-size:.9rem;margin:0}
+  .sw{display:flex;gap:7px;margin:4px 0}
+  .sw i{width:26px;height:26px;border-radius:7px;border:1px solid rgba(255,255,255,.14)}
+  .go{margin-top:6px;display:inline-flex;align-items:center;gap:7px;font-size:.86rem;font-weight:600;color:var(--fg);text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 15px;justify-self:start;transition:background .2s}
+  .go:hover{background:#1e2230}
+  .note{margin-top:44px;padding:20px 22px;border:1px solid var(--line);border-left:3px solid #d9a441;border-radius:10px;background:#15171d}
+  .note b{color:#e8bd63}
+  .note p{color:var(--fg2);font-size:.88rem;margin:6px 0 0}
+  .langs{display:flex;gap:6px;margin-top:2px}
+  .langs a{font-size:.72rem;font-weight:600;letter-spacing:.04em;color:var(--fg2);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:5px 11px;transition:border-color .2s,color .2s}
+  .langs a:hover{border-color:var(--accent);color:var(--fg)}
+  code{background:#0a0c10;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:.84em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>The One Bali — 3 variantes</h1>
+  <p class="sub">Misma información del brochure, tres estilos y tres estrategias de conversión.
+     Cada una en <b style="color:var(--fg)">español, inglés y alemán</b> como páginas estáticas independientes.
+     Las nueve envían los leads al mismo formulario de Tally, etiquetados con variante e idioma.</p>
+
+  <div class="grid">
+    <article class="card">
+      <span class="tag">V1</span>
+      <h2>Editorial Luxe</h2>
+      <div class="sw"><i style="background:#FAF7F2"></i><i style="background:#1C1B19"></i><i style="background:#C9B79C"></i><i style="background:#1F4740"></i></div>
+      <p>Revista de arquitectura: serif en caja baja, filetes finos, mucho aire. Confianza primero.</p>
+      <p style="font-size:.8rem;opacity:.7">Orgánico · Instagram · marca</p>
+      <div class="langs">
+        <a href="v1-editorial/">ES</a><a href="v1-editorial/en/">EN</a><a href="v1-editorial/de/">DE</a>
+      </div>
+      <a class="go" href="v1-editorial/">Abrir V1 →</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">V2</span>
+      <h2>Dark Cinematic</h2>
+      <div class="sw"><i style="background:#0A0A0B"></i><i style="background:#C9A227"></i><i style="background:#FF8A3C"></i><i style="background:#E8456B"></i></div>
+      <p>Negro, vidrio y degradado atardecer. Inmersión a pantalla completa, formulario en modal.</p>
+      <p style="font-size:.8rem;opacity:.7">Meta/TikTok Ads · móvil</p>
+      <div class="langs">
+        <a href="v2-cinematic/">ES</a><a href="v2-cinematic/en/">EN</a><a href="v2-cinematic/de/">DE</a>
+      </div>
+      <a class="go" href="v2-cinematic/">Abrir V2 →</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">V3</span>
+      <h2>Investor Deck</h2>
+      <div class="sw"><i style="background:#FFFFFF"></i><i style="background:#0B2545"></i><i style="background:#0F7B5F"></i><i style="background:#EEF1F6"></i></div>
+      <p>Blanco estructurado y cifras tabulares. Formulario above the fold, calculadora de ROI y FAQ.</p>
+      <p style="font-size:.8rem;opacity:.7">Google Ads · LinkedIn · inversor</p>
+      <div class="langs">
+        <a href="v3-investor/">ES</a><a href="v3-investor/en/">EN</a><a href="v3-investor/de/">DE</a>
+      </div>
+      <a class="go" href="v3-investor/">Abrir V3 →</a>
+    </article>
+  </div>
+
+  <div class="note">
+    <b>⚠️ Pendiente en Tally</b>
+    <p>Para distinguir de qué web viene cada lead hay que crear el campo oculto <code>variante</code>
+       y <code>idioma</code> en el formulario <code>8197Ql</code>. Sin ellos las nueve páginas envían igual y el panel no separa el origen.
+       Los nombres exactos del resto de campos están en el <code>README.md</code>.</p>
+  </div>
+
+  <div class="note" style="border-left-color:#5b78d9">
+    <b>Original intacto</b>
+    <p>La web de partida sigue en <code>TheOne-Bali-Web/</code> sin modificar,
+       como referencia y como origen de los assets compartidos. <a href="TheOne-Bali-Web/" style="color:var(--accent)">Abrirla</a>.</p>
+  </div>
+</div>
+</body>
+</html>
