@@ -142,12 +142,9 @@ Formulario embebido fuera del modal (lo usa el hero de V3):
 Cada variante es una web **estática**: HTML, CSS, JS e imágenes. No hay backend,
 base de datos ni build de Node. Sirve cualquier hosting estático.
 
-**Vista previa en GitHub Pages:** la rama `gh-pages` ya contiene las tres webs con los
-assets resueltos. GitHub Pages sólo está disponible si el repo es **público** (o con plan
-de pago). Si se hace público: *Settings → Pages → Branch: gh-pages* y la URL será
-<https://noviq-studio.github.io/theone-bali-webs/> con `/v1-editorial/`, `/v2-cinematic/`
-y `/v3-investor/` (y sus `/en/` y `/de/`). Tras cambiar algo en `main`, ejecuta
-`./publish-pages.sh` para actualizarla.
+**Vista previa en línea:** <https://noviq-studio.github.io/theone-bali-webs/>
+(comparador con las tres variantes y sus versiones `/en/` y `/de/`). Se sirve desde la
+rama `gh-pages`. Tras cambiar algo en `main`, ejecuta `./publish-pages.sh` para actualizarla.
 
 **Vista previa en local (sin publicar nada):**
 
