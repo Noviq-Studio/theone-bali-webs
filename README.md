@@ -64,6 +64,7 @@ tools/i18n_extract.py  etiqueta el HTML con data-i18n y regenera es.json
 tools/i18n_build.py    genera <variante>/en/ y <variante>/de/
 v1|v2|v3/           index.html (ES) + en/ + de/ + css/ + js/ + copia de leads.js/css
 deploy.sh           prepara dist/<variante>/ con los assets resueltos
+publish-pages.sh    regenera la vista previa de GitHub Pages (rama gh-pages)
 sync-shared.sh      propaga shared/leads.* y regenera los idiomas
 ```
 
@@ -141,10 +142,10 @@ Formulario embebido fuera del modal (lo usa el hero de V3):
 Cada variante es una web **estática**: HTML, CSS, JS e imágenes. No hay backend,
 base de datos ni build de Node. Sirve cualquier hosting estático.
 
-**Ver las tres en línea sin instalar nada:** cada `push` a `main` las publica en
-GitHub Pages (workflow `.github/workflows/pages.yml`). La URL sale en la pestaña
-*Actions* → *Publicar en GitHub Pages* → *deploy*. Desde ahí `/v1-editorial/`,
-`/v2-cinematic/` y `/v3-investor/` (y sus `/en/` y `/de/`).
+**Ver las tres en línea sin instalar nada:** hay una vista previa en GitHub Pages
+(rama `gh-pages`): <https://noviq-studio.github.io/theone-bali-webs/>. Desde ahí
+`/v1-editorial/`, `/v2-cinematic/` y `/v3-investor/` (y sus `/en/` y `/de/`).
+Tras cambiar algo en `main`, ejecuta `./publish-pages.sh` para actualizarla.
 
 **Publicar UNA variante en un dominio propio:**
 
