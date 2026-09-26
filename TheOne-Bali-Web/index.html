@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The One Bali · Registry Collection Hotels by Wyndham</title>
+  <meta name="description" content="The One by Almal: colección privada de residencias con servicios estilo resort en Nusa Dua, Bali. Villas, townhouses y apartamentos licenciados por Wyndham – Registry Collection Hotels.">
+  <meta name="theme-color" content="#0B2545">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Fahkwang:wght@300;400;500&family=Tenor+Sans&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-facade.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <img class="loader__logo" src="assets/img/logo-theone-registry-white.png" alt="">
+    <div class="loader__bar"><span></span></div>
+    <p class="loader__label">Nusa Dua · Bali</p>
+  </div>
+</div>
+<noscript><style>.loader{display:none}</style></noscript>
+<div class="cursor" id="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+<aside class="rail" id="rail" aria-hidden="true"><span class="rail__index">00</span><span class="rail__track"><span class="rail__fill"></span></span><span class="rail__name">Inicio</span></aside>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" id="nav" aria-label="Principal">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#inicio" aria-label="The One Bali · Registry Collection Hotels">
+      <img class="nav__logo-img nav__logo-img--light" src="assets/img/logo-theone-registry-white.png" alt="The One Bali · Registry Collection Hotels">
+      <img class="nav__logo-img nav__logo-img--dark" src="assets/img/logo-theone-registry-dark.png" alt="">
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#marca">Marca</a></li>
+      <li><a href="#premios">Premios</a></li>
+      <li><a href="#proyecto">Proyecto</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#instalaciones">Instalaciones</a></li>
+      <li><a href="#app">App</a></li>
+      <li><a href="#bali">Bali</a></li>
+      <li class="nav__links-cta"><a class="btn btn--accent btn--small" href="assets/brochure.pdf" download="The-One-Bali-Brochure.pdf">Descargar brochure</a></li>
+    </ul>
+    <a class="btn btn--accent btn--small nav__cta" href="assets/brochure.pdf" download="The-One-Bali-Brochure.pdf">Descargar brochure</a>
+    <button class="nav__burger" id="nav-burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+  </div>
+</nav>
+<!-- barra fija inferior (sólo móvil): aparece al empezar a hacer scroll -->
+<div class="dockbar" id="dockbar">
+  <a class="btn btn--accent" href="assets/brochure.pdf" download="The-One-Bali-Brochure.pdf"><i data-lucide="download"></i> Descargar brochure</a>
+</div>
+
+<!-- ===================== 1. HERO (scroll-story pinneado) ===================== -->
+<header class="hero" id="inicio" data-section="Inicio">
+  <div class="hero__sticky">
+    <div class="hero__bg">
+      <img src="assets/img/hero-facade.jpg" alt="Render de la fachada de The One Bali al atardecer" fetchpriority="high">
+    </div>
+    <div class="hero__shade"></div>
+    <img class="hero__badge" src="assets/img/badge-asia-pacific-awards.png" alt="Asia Pacific Property Awards, in association with GROHE – Award Winner 2026-2027">
+    <div class="hero__content">
+      <img class="hero__logo" src="assets/img/logo-theone-registry-white.png" alt="The One Bali · Registry Collection Hotels">
+      <h1 class="hero__title">
+        <span class="hero__line">Vive rodeado de naturaleza.</span>
+        <span class="hero__line">Invierte con confianza.</span>
+        <span class="hero__line">Sé parte de algo más grande.</span>
+      </h1>
+      <p class="hero__sub">Una colección privada de residencias con servicios en Nusa Dua, Bali.</p>
+      <div class="hero__cta">
+        <a class="btn btn--light" href="#marca">Descubrir The One</a>
+        <button class="btn btn--ghost" type="button" data-video="GWzCNFdTAVs" data-cursor="Ver"><i data-lucide="play"></i> Ver vídeo de la marca</button>
+      </div>
+    </div>
+    <div class="hero__brands">
+      <div class="hero__brand"><span>Desarrollado por</span><img src="assets/img/logo-almal-white.png" alt="Almal"></div>
+      <div class="hero__brand hero__brand--right"><span>Licenciado por</span><img src="assets/img/logo-wyndham-white.png" alt="Wyndham Hotels &amp; Resorts"></div>
+    </div>
+    <a class="hero__scroll" href="#marca" aria-label="Bajar"><span></span></a>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== 2. SOBRE LA MARCA ===================== -->
+<section class="section section--light" id="marca" data-section="Marca">
+  <div class="container split">
+    <div class="split__text">
+      <p class="eyebrow reveal">Nuestro concepto</p>
+      <h2 class="title reveal">Sobre la marca</h2>
+      <div class="rule reveal"></div>
+      <div class="prose reveal">
+        <p>The One es una colección privada de residencias con servicios en Bali, diseñada para un estilo de vida tropical elevado y una inversión con propósito.</p>
+        <p>Creado para quienes buscan un hogar que se sienta verdaderamente suyo, donde la belleza natural, el diseño cuidadosamente pensado y el valor a largo plazo se unen.</p>
+        <p>Cada espacio es abierto, refinado y diseñado para equilibrar disfrute personal y retorno de inversión.</p>
+      </div>
+      <button class="btn btn--dark reveal" type="button" data-video="GWzCNFdTAVs" data-cursor="Ver"><i data-lucide="play"></i> Ver vídeo de la marca</button>
+    </div>
+    <div class="split__media stack stack--pad-t reveal">
+      <figure class="media">
+        <img src="assets/img/aerial-sunset.jpg" alt="Vista aérea de The One Bali al atardecer" loading="lazy" data-parallax="8">
+        <figcaption class="media__claim">Vive rodeado de naturaleza.<br>Invierte con confianza.<br>Sé parte de algo más grande.</figcaption>
+      </figure>
+      <figure class="stack__float stack__float--tl"><img src="assets/img/pool-render.jpg" alt="Piscina principal de The One Bali" loading="lazy" data-parallax="-10"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3. MARCO ESTRATÉGICO ===================== -->
+<section class="section section--image framework" data-section="Marco estratégico">
+  <div class="section__bg"><img src="assets/img/bg-beach-blur.jpg" alt="" loading="lazy" data-parallax="12"></div>
+  <div class="container">
+    <p class="eyebrow eyebrow--light reveal">Marco estratégico de marca</p>
+    <div class="framework__grid" data-stagger>
+      <article class="card card--brand">
+        <div class="card__logo"><img src="assets/img/logo-almal-color.png" alt="Almal"></div>
+        <h3>Desarrollador</h3>
+        <p>Desarrollador inmobiliario con sede en Dubái, enfocado en proyectos residenciales y de hospitalidad con diseño destacado y alto valor de inversión.</p>
+        <p class="card__role">Rol: Desarrollador y propietario de la marca The One.</p>
+      </article>
+      <article class="card card--brand">
+        <div class="card__logo"><img src="assets/img/logo-wyndham-dark.png" alt="Wyndham Hotels &amp; Resorts"></div>
+        <h3>Licenciante</h3>
+        <p>Compañía hotelera global con más de 9.000 propiedades en más de 95 países, desde segmento económico hasta upscale.</p>
+        <p class="card__role">Rol: Licenciante que aporta estándares de marca y distribución global.</p>
+      </article>
+      <article class="card card--brand">
+        <div class="card__logo"><img src="assets/img/logo-theone-dark.png" alt="The One Bali"></div>
+        <h3>Marca</h3>
+        <p>Desarrollo residencial estilo resort en Nusa Dua, Bali, con villas, townhouses y apartamentos premium diseñados para estilo de vida e inversión.</p>
+        <p class="card__role">Rol: Marca propietaria desarrollada por Almal.</p>
+      </article>
+      <article class="card card--brand">
+        <div class="card__logo"><img src="assets/img/logo-registry-dark.png" alt="Registry Collection Hotels"></div>
+        <h3>Colección</h3>
+        <p>Soft brand upscale de Wyndham que reúne hoteles y resorts distintivos con carácter local y alcance global.</p>
+        <p class="card__role">Rol: Plataforma de colección bajo la red global de Wyndham.</p>
+      </article>
+    </div>
+    <p class="statement reveal">Distribución global, credibilidad de marca y posicionamiento premium, impulsados por Wyndham y Registry Collection.</p>
+  </div>
+</section>
+
+<!-- ===================== 4. ROI ===================== -->
+<section class="section section--light roi" data-section="ROI Wyndham">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow reveal">Ventaja Wyndham</p>
+      <h2 class="title reveal">Por qué Wyndham mejora el ROI para propietarios</h2>
+      <div class="rule reveal"></div>
+      <p class="lead reveal">Este proyecto está diseñado para superar el mercado aprovechando la red global de distribución de Wyndham, un potente programa de fidelidad y sistemas profesionales de gestión de ingresos normalmente no disponibles para propiedades independientes.</p>
+    </div>
+    <div class="roi__list" data-stagger>
+      <article class="roi__row">
+        <div class="roi__icon"><i data-lucide="globe"></i></div>
+        <div class="roi__body">
+          <h3>Red Global de Distribución</h3>
+          <p>Conectado al sistema de reservas SynXis de Wyndham, que ofrece visibilidad en cientos de plataformas de viaje, agencias y canales globales de reserva de Wyndham.</p>
+        </div>
+        <p class="pill">Mayor visibilidad, mayor ocupación y mejores tarifas diarias.</p>
+      </article>
+      <article class="roi__row">
+        <div class="roi__icon"><i data-lucide="heart-handshake"></i></div>
+        <div class="roi__body">
+          <h3>Programa de Fidelidad Wyndham Rewards</h3>
+          <p>Acceso a una comunidad global de más de 100 millones de viajeros a través del ecosistema de fidelidad de Wyndham.</p>
+        </div>
+        <p class="pill">Más reservas recurrentes y mayor ocupación durante todo el año.</p>
+      </article>
+      <article class="roi__row">
+        <div class="roi__icon"><i data-lucide="shield-check"></i></div>
+        <div class="roi__body">
+          <h3>Estándares Internacionales de Marca</h3>
+          <p>La propiedad cumple estrictos estándares internacionales y controles de calidad.</p>
+        </div>
+        <p class="pill">Protege el valor de la propiedad y su potencial de reventa.</p>
+      </article>
+      <article class="roi__row">
+        <div class="roi__icon"><i data-lucide="trending-up"></i></div>
+        <div class="roi__body">
+          <h3>Gestión Profesional de Ingresos</h3>
+          <p>Sistemas avanzados que ajustan las tarifas dinámicamente según la demanda global.</p>
+        </div>
+        <p class="pill">Optimiza tarifas por noche y mejora el retorno para los propietarios.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5. DUBÁI → BALI ===================== -->
+<section class="section section--navy dubai" data-section="Almal">
+  <div class="container">
+    <p class="eyebrow eyebrow--light reveal">Almal Real Estate Development</p>
+    <img class="dubai__almal reveal" src="assets/img/logo-almal-white.png" alt="Almal">
+    <div class="dubai__grid">
+      <div class="dubai__map reveal">
+        <img class="dubai__world" src="assets/img/map-world.png" alt="Mapa del mundo" loading="lazy">
+        <img class="dubai__route" src="assets/img/map-route-arcs.png" alt="Ruta de Almal desde Emiratos Árabes Unidos hasta Tailandia e Indonesia" loading="lazy">
+        <span class="dubai__pin" style="--x:42.6%;--y:41.8%"><em>UAE</em></span>
+        <span class="dubai__pin dubai__pin--r" style="--x:65.1%;--y:54.9%"><em>Tailandia</em></span>
+        <span class="dubai__pin dubai__pin--r" style="--x:73.2%;--y:70.4%"><em>Indonesia</em></span>
+      </div>
+      <figure class="dubai__photo media reveal">
+        <img src="assets/img/burj-al-arab.jpg" alt="Burj Al Arab, Dubái, visto desde el aire" loading="lazy" data-parallax="10">
+      </figure>
+    </div>
+    <div class="dubai__text">
+      <h2 class="title title--light reveal">Del skyline de Dubái<br>a la costa de Bali</h2>
+      <div class="prose prose--light reveal">
+        <p>Almal es un desarrollador inmobiliario con sede en Dubái que crea destinos icónicos a través de arquitectura audaz y proyectos de estilo de vida como The Unexpected Hotel y Harrisoni Villas.</p>
+        <p>Ahora, Almal lleva su innovación y visión global a Bali.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 6. PREMIOS (scroll horizontal pinneado) ===================== -->
+<section class="section section--image awards hpin" id="premios" data-section="Premios">
+  <div class="section__bg section__bg--ocean"><img src="assets/img/bg-ocean-boat.jpg" alt="" loading="lazy" data-parallax="14"></div>
+  <div class="hpin__sticky">
+    <div class="container hpin__head">
+      <div>
+        <p class="eyebrow eyebrow--light reveal">Almal Real Estate Development</p>
+        <h2 class="title title--light">Premios y reconocimientos</h2>
+      </div>
+      <p class="hpin__hint reveal"><span>2024 – 2027</span><i data-lucide="arrow-right"></i> Desliza</p>
+    </div>
+    <div class="hpin__track awards__track" data-stagger data-cursor="Desliza">
+      <article class="award award--featured">
+      <img class="award__badge" src="assets/img/badge-asia-pacific-awards.png" alt="Asia Pacific Property Awards – Award Winner 2026-2027">
+      <div>
+        <p class="award__org">Asia Pacific Property Awards · in association with GROHE</p>
+        <h3 class="award__title">Award Winner 2026 – 2027</h3>
+        <p class="award__project">The One Bali · A Registry Collection Hotel</p>
+      </div>
+    </article>
+      <article class="award">
+        <img src="assets/img/award-pillars.png" alt="The Pillars of Real Estate Awards 2024">
+        <h3 class="award__title">Proyecto de Villa Privada del Año</h3>
+        <p class="award__project">Harrisoni Villa – Jumeirah Road</p>
+        <p class="award__org">The Pillars of Real Estate Awards 2024 · Construction Business News ME</p>
+      </article>
+      <article class="award">
+        <img src="assets/img/award-luxury-lifestyle.png" alt="Luxury Lifestyle Awards">
+        <h3 class="award__title">Mejor Desarrollo de Villa de Lujo</h3>
+        <p class="award__project">Harrisoni Villa – Jumeirah Road</p>
+        <p class="award__org">Luxury Lifestyle Awards 2024</p>
+      </article>
+      <article class="award">
+        <img src="assets/img/award-construction-innovation.png" alt="Construction Innovation Awards 2024">
+        <h3 class="award__title">Proyecto del Año</h3>
+        <p class="award__project">The Unexpected Al Marjan Island Hotel &amp; Residence</p>
+        <p class="award__org">Construction Innovation Awards 2024</p>
+      </article>
+      <article class="award">
+        <img src="assets/img/award-uae-realty-2024.png" alt="UAE Realty Awards 2024">
+        <h3 class="award__title">Diseño Icónico del Año</h3>
+        <p class="award__project">The Unexpected Al Marjan Island Hotel &amp; Residence</p>
+        <p class="award__org">UAE Realty Awards 2024 · Finance World Magazine</p>
+      </article>
+      <article class="award">
+        <img src="assets/img/award-realtek.png" alt="The RealTek Awards 2024">
+        <h3 class="award__title">Excelencia Arquitectónica en Real Estate</h3>
+        <p class="award__project">The Unexpected Al Marjan Island Hotel &amp; Residence</p>
+        <p class="award__org">The RealTek Awards 2024</p>
+      </article>
+      <article class="award">
+        <img src="assets/img/award-realtek.png" alt="The RealTek Awards 2024">
+        <h3 class="award__title">Empresa de Inversión Inmobiliaria del Año</h3>
+        <p class="award__project">Almal Real Estate Development</p>
+        <p class="award__org">The RealTek Awards 2024</p>
+      </article>
+      <article class="award">
+        <img src="assets/img/award-international-property.png" alt="International Property Awards">
+        <h3 class="award__title">Nuevo Hotel – Construcción y Diseño</h3>
+        <p class="award__project">The Unexpected Al Marjan Island Hotel &amp; Residence</p>
+        <p class="award__org">Arabia Property Awards 2024 (RAK)</p>
+      </article>
+      <article class="award">
+        <img src="assets/img/award-international-property.png" alt="International Property Awards">
+        <h3 class="award__title">Desarrollo de Uso Mixto</h3>
+        <p class="award__project">The Unexpected Al Marjan Island Hotel &amp; Residence</p>
+        <p class="award__org">Arabia Property Awards 2024 (RAK)</p>
+      </article>
+      <article class="award">
+        <img src="assets/img/award-international-property.png" alt="International Property Awards">
+        <h3 class="award__title">Arquitectura de Uso Mixto</h3>
+        <p class="award__project">The Unexpected Al Marjan Island Hotel &amp; Residence</p>
+        <p class="award__org">Arabia Property Awards 2024 (RAK)</p>
+      </article>
+      <article class="award">
+        <img src="assets/img/award-pioneer-50.png" alt="Pioneer 50 – 2024">
+        <h3 class="award__title">Pioneer 50 – Industria Inmobiliaria de EAU 2024</h3>
+        <p class="award__project">Dmitriy Starovoitov</p>
+        <p class="award__org">Finance World Magazine</p>
+      </article>
+      <article class="award">
+        <img src="assets/img/award-uae-realty-2025.png" alt="UAE Realty Awards 2025">
+        <h3 class="award__title">Proyecto de Villa de Lujo del Año</h3>
+        <p class="award__project">Harrisoni Villa – Jumeirah Road</p>
+        <p class="award__org">UAE Realty Awards 2025</p>
+      </article>
+      <article class="award award--end">
+        <span class="award__big" data-count="18">0</span>
+        <p class="award__title">Premios y reconocimientos</p>
+        <p class="award__org">Almal · 2024 – 2027</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 7. PRENSA ===================== -->
+<section class="section section--light press" data-section="Prensa">
+  <div class="container split split--press">
+    <div class="split__text">
+      <p class="eyebrow reveal">Cobertura</p>
+      <img class="press__almal reveal" src="assets/img/logo-almal-color.png" alt="Almal">
+      <h2 class="title reveal">Prensa y medios</h2>
+      <div class="rule reveal"></div>
+      <p class="lead reveal">Almal ha sido destacado por algunos de los medios más influyentes y reconocidos de los EAU.</p>
+      <a class="btn btn--dark reveal" href="https://www.almal-investments.com/media-coverage" target="_blank" rel="noopener">Ver en Google <i data-lucide="arrow-up-right"></i></a>
+      <div class="press__logos reveal">
+        <img src="assets/img/media-khaleej-times.png" alt="Khaleej Times">
+        <img src="assets/img/media-gulf-news.png" alt="Gulf News">
+        <img src="assets/img/media-forbes.png" alt="Forbes">
+        <img src="assets/img/media-whats-on.png" alt="What's On">
+      </div>
+    </div>
+    <div class="press__cards" data-stagger>
+      <a class="press__card" data-cursor="Leer" href="https://gulfeconomist.ae/almal-real-estate-expands-with-bali-project/" target="_blank" rel="noopener">
+        <img src="assets/img/press-gulf-economist.jpg" alt="Gulf Economist: Almal Real Estate expands with Bali project" loading="lazy">
+        <span class="press__source">Gulf Economist <i data-lucide="arrow-up-right"></i></span>
+      </a>
+      <a class="press__card press__card--tall" data-cursor="Leer" href="https://www.constructionweekonline.com/power-lists/revealed-uae-real-estate-developers-to-watch-out-for-in-2025" target="_blank" rel="noopener">
+        <img src="assets/img/press-construction-week.jpg" alt="Construction Week: UAE real estate developers to watch out for in 2025" loading="lazy">
+        <span class="press__source">Construction Week <i data-lucide="arrow-up-right"></i></span>
+      </a>
+      <a class="press__card" data-cursor="Leer" href="https://thefinanceworld.com/almal-real-estate-marks-global-launch-with-the-one-by-almal-in-bali/" target="_blank" rel="noopener">
+        <img src="assets/img/press-finance-world.jpg" alt="The Finance World: Almal Real Estate marks global launch with The One by Almal in Bali" loading="lazy">
+        <span class="press__source">The Finance World <i data-lucide="arrow-up-right"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 8. SOCIOS ===================== -->
+<section class="section section--cream partners" data-section="Socios">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow reveal">Ecosistema</p>
+      <h2 class="title reveal">Socios</h2>
+      <div class="rule reveal"></div>
+    </div>
+    <div class="partners__grid" data-stagger>
+      <article class="partner">
+        <div class="partner__logo"><img src="assets/img/partner-888.png" alt="888 Design &amp; Build"></div>
+        <h3>888 Design &amp; Build</h3>
+        <p class="partner__tag">Arquitectura de lujo · Construcción de precisión · Entrega integral</p>
+        <p>Firma especializada en proyectos residenciales y hoteleros de alta gama en Bali y Lombok, ofreciendo ejecución completa de principio a fin.</p>
+      </article>
+      <article class="partner">
+        <div class="partner__logo"><img src="assets/img/partner-gplus.png" alt="G-Plus Solutions"></div>
+        <h3>G-Plus Solutions</h3>
+        <p class="partner__tag">CRM inmobiliario y herramientas digitales de ventas</p>
+        <p>Proveedor tecnológico que ofrece plataformas CRM y soluciones digitales para desarrolladores inmobiliarios, optimizando la gestión comercial y la comunicación con clientes.</p>
+      </article>
+      <article class="partner">
+        <div class="partner__logo"><img src="assets/img/partner-sng.png" alt="Surya Negara Group"></div>
+        <h3>Surya Negara Group</h3>
+        <p class="partner__tag">Socio de permisos y cumplimiento</p>
+        <p>Firma especializada en asesoría legal, permisos y cumplimiento corporativo en Indonesia, garantizando procesos regulatorios eficientes.</p>
+      </article>
+      <article class="partner">
+        <div class="partner__logo"><img src="assets/img/partner-atmos.png" alt="Atmosphera Group"></div>
+        <h3>Atmosphera Group</h3>
+        <p class="partner__tag">Gestión de proyectos de construcción</p>
+        <p>Empresa con sede en Bali que ofrece soluciones integrales para proyectos residenciales y comerciales, incluyendo coordinación de diseño, supervisión de obra y gestión de propiedades.</p>
+      </article>
+      <article class="partner">
+        <div class="partner__logo"><img src="assets/img/partner-dgroup.png" alt="D-Group"></div>
+        <h3>D-Group</h3>
+        <p class="partner__tag">Desarrollo y construcción internacional</p>
+        <p>Desarrollador inmobiliario global con experiencia en proyectos residenciales, comerciales y hoteleros a gran escala.</p>
+      </article>
+      <article class="partner">
+        <div class="partner__logo"><img src="assets/img/partner-breasy.png" alt="Breasy DXB"></div>
+        <h3>Breasy DXB</h3>
+        <p class="partner__tag">Experiencias de bienestar y breathwork</p>
+        <p>Empresa que crea experiencias de bienestar inspiradas en Bali a través de sesiones de yoga, respiración y baños de hielo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 9. NUESTROS PROYECTOS (scroll horizontal pinneado) ===================== -->
+<section class="section section--navy projects hpin" data-section="Proyectos">
+  <div class="hpin__sticky">
+    <div class="container hpin__head">
+      <div>
+        <p class="eyebrow eyebrow--light reveal">Almal</p>
+        <h2 class="title title--light">Nuestros proyectos</h2>
+      </div>
+      <p class="hpin__hint reveal"><span>4 destinos</span><i data-lucide="arrow-right"></i> Desliza</p>
+    </div>
+    <div class="hpin__track projects__track" data-stagger data-cursor="Desliza">
+      <article class="panel">
+        <img class="panel__img" src="assets/img/project-panel-harrisoni.jpg" alt="Harrisoni La Mer, Dubái" loading="lazy">
+        <div class="panel__body">
+          <span class="panel__num">01</span>
+          <img class="panel__logo" src="assets/img/project-harrisoni.png" alt="">
+          <h3>Harrisoni La Mer</h3>
+          <p>Colección galardonada de villas de 5 habitaciones ubicada en La Mer Island, Dubái, EAU.</p>
+        </div>
+      </article>
+      <article class="panel">
+        <img class="panel__img" src="assets/img/project-panel-smart-space.jpg" alt="The Smart Space, EAU" loading="lazy">
+        <div class="panel__body">
+          <span class="panel__num">02</span>
+          <img class="panel__logo" src="assets/img/project-smart-space.png" alt="">
+          <h3>The Smart Space</h3>
+          <p>Centros de negocios premium diseñados para innovación y crecimiento en los EAU.</p>
+        </div>
+      </article>
+      <article class="panel">
+        <img class="panel__img" src="assets/img/project-panel-unexpected.jpg" alt="The Unexpected Al Marjan Island Hotel &amp; Residences" loading="lazy">
+        <div class="panel__body">
+          <span class="panel__num">03</span>
+          <img class="panel__logo" src="assets/img/project-unexpected.png" alt="">
+          <h3>The Unexpected Al Marjan</h3>
+          <p>422 unidades hoteleras y residenciales ubicadas a minutos del futuro Wynn en Al Marjan Island, EAU.</p>
+        </div>
+      </article>
+      <article class="panel">
+        <img class="panel__img" src="assets/img/project-panel-theone.jpg" alt="The One by Almal, Bali" loading="lazy">
+        <div class="panel__body">
+          <span class="panel__num">04</span>
+          <img class="panel__logo" src="assets/img/logo-theone-byalmal-white.png" alt="">
+          <h3>The One by Almal</h3>
+          <p>Villas y apartamentos estilo resort en el corazón de Bali, diseñados para vivir, invertir y pertenecer.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 10. PORTFOLIO ===================== -->
+<section class="section section--image portfolio" data-section="Portfolio">
+  <div class="section__bg"><img src="assets/img/dubai-skyline.jpg" alt="" loading="lazy" data-parallax="14"></div>
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow eyebrow--light reveal">Almal en cifras</p>
+      <h2 class="title title--light reveal">Portfolio</h2>
+      <div class="rule reveal"></div>
+    </div>
+    <div class="stats stats--5" data-stagger>
+      <div class="stat"><span class="stat__num"><span data-count="100">0</span>K<sup>m²</sup></span><span class="stat__label">Terreno adquirido</span></div>
+      <div class="stat"><span class="stat__num" data-count="9">0</span><span class="stat__label">Ubicaciones en el mundo</span></div>
+      <div class="stat"><span class="stat__num" data-count="4">0</span><span class="stat__label">Marcas desarrolladas</span></div>
+      <div class="stat"><span class="stat__num" data-count="18">0</span><span class="stat__label">Premios y reconocimientos</span></div>
+      <div class="stat"><span class="stat__num"><span data-count="100">0</span>+</span><span class="stat__label">Socios estratégicos</span></div>
+      <div class="stat"><span class="stat__num" data-count="319">0</span><span class="stat__label">Habitaciones de hotel</span></div>
+      <div class="stat"><span class="stat__num" data-count="194">0</span><span class="stat__label">Apartamentos</span></div>
+      <div class="stat"><span class="stat__num" data-count="2">0</span><span class="stat__label">Villas de lujo de 5 habitaciones</span></div>
+      <div class="stat"><span class="stat__num" data-count="12">0</span><span class="stat__label">Villas de 2 habitaciones</span></div>
+      <div class="stat"><span class="stat__num" data-count="30">0</span><span class="stat__label">Townhouses</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 11. MAGICAL VILLAS ===================== -->
+<section class="section section--light magical" data-section="Magical Villas">
+  <div class="container">
+    <div class="split split--magical">
+      <div class="split__text">
+        <p class="eyebrow reveal">Portfolio</p>
+        <img class="magical__logo reveal" src="assets/img/logo-magical-villas-dark.png" alt="Magical Bali Villas">
+        <h2 class="title reveal">Magical Villas</h2>
+        <div class="rule reveal"></div>
+        <p class="lead reveal">14 villas hoteleras exclusivas (2 a 6 habitaciones) ubicadas en el corazón de Ubud, Bali. Magic Bali Villas combina privacidad, diseño y servicios estilo hotel.</p>
+      </div>
+      <div class="split__media stack stack--pad-b reveal">
+        <figure class="media">
+          <img src="assets/img/magical-aerial.jpg" alt="Vista aérea de Magical Bali Villas en Ubud" loading="lazy" data-parallax="8">
+        </figure>
+        <figure class="stack__float stack__float--br"><img src="assets/img/gallery-06.jpg" alt="Villa de Magical Bali Villas al anochecer" loading="lazy" data-parallax="-10"></figure>
+      </div>
+    </div>
+  </div>
+  <div class="gallery reveal" aria-label="Galería de Magical Bali Villas">
+    <div class="gallery__track" data-cursor="Arrastra">
+      <img src="assets/img/gallery-01.jpg" alt="Piscina y zona de descanso de Magical Bali Villas" loading="lazy">
+      <img src="assets/img/gallery-02.jpg" alt="Salón abierto al jardín" loading="lazy">
+      <img src="assets/img/gallery-03.jpg" alt="Comedor y escalera de diseño" loading="lazy">
+      <img src="assets/img/gallery-04.jpg" alt="Pérgola junto a la piscina" loading="lazy">
+      <img src="assets/img/gallery-05.jpg" alt="Bañera exterior entre la vegetación" loading="lazy">
+      <img src="assets/img/gallery-06.jpg" alt="Villa iluminada al anochecer" loading="lazy">
+      <img src="assets/img/gallery-07.jpg" alt="Zona lounge nocturna junto a la piscina" loading="lazy">
+      <img src="assets/img/gallery-08.jpg" alt="Cocina abierta con isla" loading="lazy">
+      <img src="assets/img/gallery-09.jpg" alt="Dormitorio con vistas al jardín" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 12. INFORMACIÓN GENERAL ===================== -->
+<section class="section section--cream info" id="proyecto" data-section="Proyecto">
+  <div class="container info__grid">
+    <figure class="info__media media">
+      <img src="assets/img/aerial-villas-day.jpg" alt="Vista aérea de las villas y la playa de The One Bali" loading="lazy">
+      <figcaption class="media__claim media__claim--top">Vida estilo resort por un desarrollador galardonado de Dubái</figcaption>
+    </figure>
+    <div class="info__text">
+      <p class="eyebrow reveal">Sobre el proyecto</p>
+      <h2 class="title reveal">Información general</h2>
+      <div class="rule reveal"></div>
+      <dl class="specs" data-stagger>
+        <div class="specs__row"><dt>Nombre del proyecto</dt><dd>The One by Almal</dd></div>
+        <div class="specs__row"><dt>Ubicación</dt><dd>Nusa Dua, Bali</dd></div>
+        <div class="specs__row"><dt>Desarrollador</dt><dd>Almal Real Estate Development</dd></div>
+        <div class="specs__row"><dt>Zona de uso</dt><dd>Turismo</dd></div>
+        <div class="specs__row"><dt>Fases</dt><dd>02</dd></div>
+        <div class="specs__row"><dt>Entrega estimada</dt><dd>Q3 2027</dd></div>
+      </dl>
+      <a class="btn btn--dark reveal" href="assets/brochure.pdf" download="The-One-Bali-Brochure.pdf"><i data-lucide="download"></i> Descargar brochure del proyecto</a>
+      <div class="info__logos reveal">
+        <img src="assets/img/logo-theone-registry-dark.png" alt="The One Bali · Registry Collection Hotels">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 13. UBICACIÓN ===================== -->
+<section class="section section--navy location" id="ubicacion" data-section="Ubicación">
+  <div class="section__bg section__bg--texture"><img src="assets/img/bg-ocean-texture.jpg" alt="" loading="lazy"></div>
+  <div class="container">
+    <div class="location__grid">
+      <div class="location__text">
+        <p class="eyebrow eyebrow--light reveal">Nusa Dua · Bali</p>
+        <h2 class="title title--light reveal">Ubicación</h2>
+        <div class="rule reveal"></div>
+        <p class="lead lead--light reveal">Ubicado en las exclusivas costas de Nusa Dua, The One está rodeado por algunos de los paisajes marinos más impresionantes de Bali.</p>
+        <ul class="distances" data-stagger>
+          <li><i data-lucide="plane"></i><div><strong>30 min al aeropuerto</strong></div></li>
+          <li><i data-lucide="sun"></i><div><strong>5–15 min a beach clubs premium</strong><span>Sawangan, Pantai Gunung Payung, Geger, Pandawa, Green Bowl y Nusa Dua Beach.</span></div></li>
+          <li><i data-lucide="building-2"></i><div><strong>5–10 min a hoteles de lujo</strong><span>Hilton Bali Resort, The Ritz-Carlton Bali, The Apurva Kempinski, St. Regis Bali, Bvlgari Resort, Four Seasons, Jumeirah, Mandarin Oriental y Alila Villas Uluwatu.</span></div></li>
+          <li><i data-lucide="music"></i><div><strong>5–20 min a la vida nocturna</strong><span>Canna Bali y Savaya, votado como el club #1 de Asia en 2024.</span></div></li>
+          <li><i data-lucide="ship"></i><div><strong>20 min al puerto</strong><span>Benoa Harbour y clubes náuticos.</span></div></li>
+          <li><i data-lucide="landmark"></i><div><strong>35 min al templo</strong><span>Templo de Uluwatu.</span></div></li>
+        </ul>
+        <div class="btn-row reveal">
+          <button class="btn btn--light" type="button" data-video="BcMp1cH3KDY" data-cursor="Ver"><i data-lucide="play"></i> Ver vídeo de ubicación</button>
+          <a class="btn btn--ghost" href="https://www.google.com/maps?q=-8.8302863,115.2092913" target="_blank" rel="noopener"><i data-lucide="map-pin"></i> Ver en Google Maps</a>
+        </div>
+      </div>
+      <div class="location__map reveal">
+        <img src="assets/img/map-bali.png" alt="Mapa de la península de Bukit, Bali, con la ubicación de The One y los principales hoteles, playas y beach clubs" loading="lazy" data-parallax="6">
+      </div>
+    </div>
+
+    <div class="location__grid location__grid--nusa">
+      <div class="location__map location__map--nusa reveal">
+        <img src="assets/img/map-nusa-dua.png" alt="Mapa de Nusa Dua con The One, St. Regis, Mulia, Hilton, The Apurva Kempinski, The Ritz-Carlton y Canna Bali Beach Club" loading="lazy">
+      </div>
+      <div class="location__text">
+        <h3 class="title title--light title--sm reveal">Nusa Dua</h3>
+        <div class="prose prose--light reveal">
+          <p>Nusa Dua es una de las zonas más exclusivas y demandadas de Bali, ideal para desarrollos residenciales y hoteleros de alto nivel.</p>
+          <p>El área combina paisajes naturales impresionantes, infraestructura de primer nivel y acceso directo a los principales puntos de la isla.</p>
+          <p>Marcas hoteleras de prestigio como St. Regis, Kempinski, Mulia, Mandarin Oriental, Ritz-Carlton y Hilton ya han elegido Nusa Dua, consolidándola como uno de los destinos más exclusivos de Bali.</p>
+        </div>
+        <div class="hotels reveal">
+          <img src="assets/img/hotel-ritz-carlton.png" alt="The Ritz-Carlton">
+          <img src="assets/img/hotel-kempinski.png" alt="The Apurva Kempinski Bali">
+          <img src="assets/img/hotel-hilton.png" alt="Hilton – For the Stay">
+          <img src="assets/img/hotel-mandarin.png" alt="Mandarin Oriental">
+        </div>
+        <p class="location__ocean reveal">Océano Índico</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 14. DESTACADOS ===================== -->
+<section class="section section--light highlights" data-section="Destacados">
+  <div class="container split split--highlights">
+    <div class="split__text">
+      <p class="eyebrow reveal">The One · Fase 01</p>
+      <h2 class="title reveal">Destacados</h2>
+      <div class="rule reveal"></div>
+      <div class="facts" data-stagger>
+        <div class="fact"><i data-lucide="building-2"></i><span class="fact__num" data-count="154">0</span><span class="fact__label">Unidades residenciales: villas, townhouses y apartamentos</span></div>
+        <div class="fact"><i data-lucide="sparkles"></i><span class="fact__num" data-count="8">0</span><span class="fact__label">Amenidades para residentes</span></div>
+        <div class="fact"><i data-lucide="wallet"></i><span class="fact__num"><span data-count="98">0</span>K <small>USD</small></span><span class="fact__label">Precio inicial</span></div>
+        <div class="fact"><i data-lucide="calendar"></i><span class="fact__num"><span data-count="18">0</span> <small>meses</small></span><span class="fact__label">Plan de pago en cuotas</span></div>
+        <div class="fact"><i data-lucide="trending-up"></i><span class="fact__num"><small>Hasta</small> <span data-count="22">0</span>%</span><span class="fact__label">Retorno de inversión</span></div>
+        <div class="fact"><i data-lucide="file-text"></i><span class="fact__num"><span data-count="25">0</span> + 15 <small>años</small></span><span class="fact__label">Plazo de leasehold</span></div>
+        <div class="fact"><i data-lucide="smartphone"></i><span class="fact__num fact__num--text">Gestión mediante app</span></div>
+        <div class="fact"><i data-lucide="waves"></i><span class="fact__num fact__num--text">Vistas al océano</span></div>
+      </div>
+    </div>
+    <figure class="split__media media media--tall reveal">
+      <img src="assets/img/aerial-night.jpg" alt="Vista aérea nocturna de The One, Fase 01" loading="lazy" data-parallax="8">
+      <figcaption class="media__claim media__claim--top media__claim--center"><span class="media__brand">The One</span><span>Fase 01</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== 15. RESUMEN GENERAL ===================== -->
+<section class="section section--image summary" data-section="Resumen">
+  <div class="section__bg"><img src="assets/img/facade-night.jpg" alt="" loading="lazy" data-parallax="14"></div>
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow eyebrow--light reveal">The One Bali</p>
+      <h2 class="title title--light reveal">Resumen general</h2>
+      <div class="rule reveal"></div>
+    </div>
+    <div class="summary__grid" data-stagger>
+      <article class="card card--glass">
+        <h3 class="card__head">Instalaciones</h3>
+        <ul class="amenities">
+          <li><i data-lucide="key-round"></i><span><b><span data-count="290">0</span> m²</b> Lobby principal</span></li>
+          <li><i data-lucide="briefcase"></i><span><b><span data-count="92">0</span> m²</b> Espacio de co-working</span></li>
+          <li><i data-lucide="utensils"></i><span><b><span data-count="96">0</span> m²</b> Pool bar y restaurante</span></li>
+          <li><i data-lucide="sun"></i><span><b><span data-count="352">0</span> m²</b> Restaurante en rooftop</span></li>
+          <li><i data-lucide="dumbbell"></i><span><b><span data-count="266">0</span> m²</b> Gimnasio totalmente equipado</span></li>
+          <li><i data-lucide="waves"></i><span><b><span data-count="1" data-pad="2">00</span></b> Piscina general</span></li>
+          <li><i data-lucide="users"></i><span><b><span data-count="4" data-pad="2">00</span></b> Piscinas compartidas con acceso privado</span></li>
+          <li><i data-lucide="home"></i><span><b><span data-count="63">0</span></b> Piscinas privadas</span></li>
+          <li><i data-lucide="car"></i><span><b><span data-count="70">0</span>+</b> Estacionamiento subterráneo para vehículos</span></li>
+        </ul>
+      </article>
+      <article class="card card--glass">
+        <h3 class="card__head">Tipos de unidades</h3>
+        <ul class="units">
+          <li><i data-lucide="home"></i><span class="units__num" data-count="12">0</span><span>Villas</span></li>
+          <li><i data-lucide="building"></i><span class="units__num" data-count="30">0</span><span>Townhouses</span></li>
+          <li><i data-lucide="building-2"></i><span class="units__num" data-count="112">0</span><span>Apartamentos</span></li>
+        </ul>
+      </article>
+      <article class="card card--glass">
+        <h3 class="card__head">Especificaciones del terreno</h3>
+        <dl class="specs specs--light">
+          <div class="specs__row"><dt>Superficie del terreno</dt><dd><span data-count="10000" data-format="es">0</span> m²</dd></div>
+          <div class="specs__row"><dt>Área construida</dt><dd><span data-count="13100" data-format="es">0</span> m²</dd></div>
+          <div class="specs__row"><dt>Número de pisos</dt><dd>G+3</dd></div>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 16. INSTALACIONES (pinned) ===================== -->
+<section class="pinned" id="instalaciones" data-section="Instalaciones">
+  <div class="pinned__sticky">
+    <img class="pinned__img" src="assets/img/pool-render.jpg" alt="Piscina principal de The One Bali entre los edificios y la vegetación tropical" loading="lazy">
+    <div class="pinned__shade"></div>
+    <div class="pinned__content">
+      <p class="eyebrow eyebrow--light">The One Bali</p>
+      <h2 class="title title--light title--xl">Instalaciones</h2>
+      <p class="pinned__sub">Piscinas, rooftop, gimnasio, co-working y lobby: 8 amenidades pensadas para residentes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 17. GESTIÓN DE PROPIEDADES ===================== -->
+<section class="section section--light management" data-section="Gestión">
+  <div class="container split">
+    <div class="split__text">
+      <p class="eyebrow reveal">Servicios</p>
+      <h2 class="title reveal">Gestión de propiedades</h2>
+      <div class="rule reveal"></div>
+      <div class="prose reveal">
+        <p><strong>Deja que tu propiedad trabaje para ti.</strong></p>
+        <p>Ya sea que vivas en ella, la alquiles o la visites ocasionalmente, The One ofrece una experiencia de gestión completa adaptada a tus necesidades:</p>
+      </div>
+      <ul class="checks" data-stagger>
+        <li><i data-lucide="check"></i>Limpieza, lavandería y mantenimiento</li>
+        <li><i data-lucide="check"></i>Check-in / check-out y atención a huéspedes</li>
+        <li><i data-lucide="check"></i>Gestión de marketing y publicaciones en Airbnb, Booking y más</li>
+      </ul>
+    </div>
+    <figure class="split__media media media--tall reveal">
+      <img src="assets/img/reception-bell.jpg" alt="Campana de recepción de hotel" loading="lazy" data-parallax="8">
+      <figcaption class="media__claim media__claim--big">Tú eres el propietario.<br>Nosotros nos encargamos del resto.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== 18. THE ONE APP ===================== -->
+<section class="section section--sky app" id="app" data-section="The One App">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <p class="eyebrow reveal">The One App by Almal</p>
+      <h2 class="title reveal">The One App</h2>
+      <div class="rule rule--center reveal"></div>
+      <p class="lead reveal"><strong>Sé propietario. Gestiona tu propiedad desde cualquier lugar.</strong></p>
+      <p class="prose reveal">Una plataforma de vida inteligente que mejora la experiencia del huésped, optimiza la gestión de la propiedad y fortalece el valor del activo a largo plazo. Descubre The One App by ALMAL, tu acceso digital a una propiedad gestionada y a un estilo de vida inteligente en The One Bali.</p>
+    </div>
+    <div class="app__grid">
+      <figure class="app__woman media reveal">
+        <img src="assets/img/app-woman.jpg" alt="Propietaria consultando The One App en su móvil" loading="lazy">
+      </figure>
+      <div class="app__features">
+        <p class="app__label reveal">Lo que puedes hacer</p>
+        <ul class="features" data-stagger>
+          <li><i data-lucide="ticket"></i><span>Reservar experiencias y gestionar tu estancia</span></li>
+          <li><i data-lucide="globe"></i><span>Invertir en 6 destinos globales</span></li>
+          <li><i data-lucide="sparkles"></i><span>Acceder a amenidades y servicios del resort</span></li>
+          <li><i data-lucide="coins"></i><span>Reinvertir o retirar tus ganancias fácilmente</span></li>
+        </ul>
+        <div class="app__stores reveal">
+          <div>
+            <p class="app__label">Disponible en</p>
+            <div class="app__badges">
+              <img src="assets/img/badge-google-play.jpg" alt="Disponible en Google Play">
+              <img src="assets/img/badge-app-store.jpg" alt="Descargar en el App Store">
+            </div>
+          </div>
+          <div class="app__qr">
+            <p class="app__label">Escanea el código QR</p>
+            <img src="assets/img/app-qr.jpg" alt="Código QR de The One App">
+          </div>
+        </div>
+        <button class="btn btn--dark reveal" type="button" data-video="WZMryG8EVeI" data-cursor="Ver"><i data-lucide="play"></i> Ver vídeo de la app</button>
+      </div>
+      <figure class="app__phones media reveal">
+        <img src="assets/img/app-phones.jpg" alt="Pantallas de The One App: ingresos, propiedades, comunidad y eventos" loading="lazy" data-parallax="10">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 19. CONCEPTO DE DISEÑO ===================== -->
+<section class="section section--light concept" data-section="Diseño">
+  <div class="container split">
+    <div class="split__text">
+      <p class="eyebrow reveal">Arquitectura</p>
+      <h2 class="title reveal">Concepto de diseño</h2>
+      <div class="rule reveal"></div>
+      <div class="prose reveal">
+        <p>The One Bali combina diseño tropical contemporáneo con la esencia balinesa en un desarrollo de baja altura cuidadosamente planificado en Nusa Dua.</p>
+        <p>La arquitectura integra interiores y exteriores de forma fluida, con puertas de vidrio de altura completa, jardines privados y plunge pools. Inspirado en la arquitectura tradicional, cada residencia incorpora materiales naturales como madera, piedra y latón, creando un ambiente atemporal donde la privacidad y la naturaleza conviven en armonía.</p>
+      </div>
+    </div>
+    <div class="split__media stack stack--pad-b reveal">
+      <figure class="media media--tall">
+        <img src="assets/img/beach-turquoise.jpg" alt="Playa de arena dorada y aguas turquesa vista desde el aire" loading="lazy" data-parallax="8">
+        <figcaption class="media__claim media__claim--big">Moldeado por la naturaleza.<br>Definido por la emoción.</figcaption>
+      </figure>
+      <figure class="stack__float stack__float--bl"><img src="assets/img/facade-pool.jpg" alt="Fachada y piscina de The One Bali" loading="lazy" data-parallax="-10"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 20. RECORRIDO VIRTUAL ===================== -->
+<section class="tour" data-section="Recorrido virtual">
+  <div class="tour__bg"><img src="assets/img/facade-pool.jpg" alt="Fachada y piscina de The One Bali" loading="lazy" data-parallax="16"></div>
+  <div class="tour__content">
+    <p class="eyebrow eyebrow--light reveal">The One Bali</p>
+    <h2 class="title title--light title--xl reveal">Recorrido virtual</h2>
+    <button class="tour__play reveal" type="button" data-video="g4cv1TpGAz8" data-cursor="Ver" aria-label="Ver vídeo del proyecto"><i data-lucide="play"></i></button>
+    <p class="tour__hint reveal">Haz clic para ver el vídeo del proyecto</p>
+  </div>
+</section>
+
+<!-- ===================== 21. ¿POR QUÉ BALI? ===================== -->
+<section class="section section--cream bali" id="bali" data-section="Bali">
+  <div class="container split split--bali">
+    <figure class="split__media media media--tall reveal">
+      <img src="assets/img/kelingking.jpg" alt="Acantilado y playa de Kelingking, Nusa Penida" loading="lazy" data-parallax="8">
+    </figure>
+    <div class="split__text">
+      <p class="eyebrow reveal">Mercado</p>
+      <h2 class="title reveal">¿Por qué Bali?</h2>
+      <div class="rule reveal"></div>
+      <ul class="reasons" data-stagger>
+        <li><i data-lucide="home"></i><div><span class="reasons__tag">Alta demanda de alquiler</span><strong>Tasas de ocupación &gt;90% durante todo el año</strong></div></li>
+        <li><i data-lucide="trending-up"></i><div><span class="reasons__tag">Crecimiento de transacciones inmobiliarias</span><strong>~40% más transacciones y ~9% aumento en precios</strong><strong>~30% más transacciones y ~9% aumento en precios</strong></div></li>
+        <li><i data-lucide="globe"></i><div><span class="reasons__tag">Bali sigue siendo un destino global líder</span><strong>6,3 millones de turistas en 2024 (+19,5% vs 2023)</strong></div></li>
+        <li><i data-lucide="layers"></i><div><span class="reasons__tag">Tierra limitada</span><strong>Solo el 5% de Bali está zonificado para turismo y bienes raíces, lo que genera escasez.</strong></div></li>
+      </ul>
+      <h3 class="bali__sub reveal">Principales catalizadores de crecimiento</h3>
+      <ul class="checks checks--accent" data-stagger>
+        <li><i data-lucide="check"></i>Nuevo aeropuerto internacional</li>
+        <li><i data-lucide="check"></i>Parque temático Paramount</li>
+        <li><i data-lucide="check"></i>Circuito de Fórmula 1 y nuevo puerto de cruceros</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="section section--navy cta" data-section="Contacto">
+  <div class="container cta__inner">
+    <img class="cta__logo reveal" src="assets/img/logo-theone-registry-white.png" alt="The One Bali · Registry Collection Hotels">
+    <p class="eyebrow eyebrow--light reveal">The One Bali · Nusa Dua</p>
+    <h2 class="title title--light reveal">Vive, invierte y pertenece.</h2>
+    <p class="lead lead--light reveal">Entrega estimada Q3 2027 · Precio inicial 98K USD · Plan de pago en 18 meses.</p>
+    <div class="btn-row btn-row--center reveal">
+      <a class="btn btn--accent" href="assets/brochure.pdf" download="The-One-Bali-Brochure.pdf"><i data-lucide="download"></i> Descargar brochure</a>
+      <a class="btn btn--ghost" href="https://www.theonebyalmal.com/" target="_blank" rel="noopener">theonebyalmal.com <i data-lucide="arrow-up-right"></i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== 22. FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__brands" data-stagger>
+      <a class="footer__brand" href="https://www.wyndhamhotels.com/" target="_blank" rel="noopener"><span>Licenciante</span><img src="assets/img/logo-wyndham-white.png" alt="Wyndham Hotels &amp; Resorts"></a>
+      <a class="footer__brand" href="https://www.theonebyalmal.com/" target="_blank" rel="noopener"><span>Marca</span><img src="assets/img/logo-theone-byalmal-white.png" alt="The One by Almal"></a>
+      <a class="footer__brand" href="https://www.wyndhamhotels.com/registry-collection" target="_blank" rel="noopener"><span>Colección</span><img src="assets/img/logo-registry-white.png" alt="Registry Collection Hotels"></a>
+      <a class="footer__brand" href="https://almal-investments.com/" target="_blank" rel="noopener"><span>Desarrollador</span><img src="assets/img/logo-almal-white.png" alt="Almal"></a>
+    </div>
+    <div class="footer__line"></div>
+    <h3 class="footer__title">*Disclaimer</h3>
+    <div class="footer__disclaimer">
+      <p>“The One by ALMAL Bali Nusa Dua, a Registry Collection Hotel” (“Proyecto”) no es propiedad, ni ha sido desarrollado, gestionado o vendido por Wyndham Hotels &amp; Resorts Asia Pacific Pte. Ltd. ni por sus afiliadas (“Wyndham”).</p>
+      <p>PT. Magical Bali Villas (“Desarrollador”) es una entidad de propiedad y operación independiente de Wyndham y es el único responsable de la propiedad, el desarrollo y la operación del Proyecto.</p>
+      <p>El Desarrollador utiliza la marca Registry Collection Hotels y ciertas marcas registradas conforme a una licencia limitada, no exclusiva, no transferible y no sublicenciable otorgada por Wyndham. En determinadas circunstancias, la licencia puede ser terminada o revocada de acuerdo con sus términos, en cuyo caso el Proyecto dejará de identificarse como un hotel de la marca Registry Collection Hotels o de tener cualquier derecho a utilizar la marca Registry Collection Hotels.</p>
+      <p>Wyndham no realiza declaraciones ni ofrece garantías con respecto a las Unidades en venta en el Proyecto ni sobre la viabilidad del Proyecto en su conjunto, y no es responsable de las prácticas de marketing, publicidad ni de las declaraciones de venta del Desarrollador.</p>
+      <p>Todos los materiales, dimensiones, precios y planos son únicamente aproximados. La información está sujeta a cambios sin previo aviso, a la absoluta discreción del desarrollador. El área real puede variar respecto al área indicada.</p>
+    </div>
+    <a class="footer__site" href="https://almal-investments.com/" target="_blank" rel="noopener">www.almal-investments.com</a>
+    <p class="footer__copy">© 2026 Almal Real Estate Development LLC · The One Bali</p>
+  </div>
+</footer>
+
+<!-- ===================== FORMULARIO DE CONTACTO / DESCARGA DEL BROCHURE (Tally) ===================== -->
+<div class="gate" id="lead" hidden role="dialog" aria-modal="true" aria-labelledby="lead-title">
+  <div class="gate__backdrop" data-lead-close></div>
+  <div class="gate__card">
+    <button class="gate__close" type="button" data-lead-close aria-label="Cerrar"><i data-lucide="x"></i></button>
+    <img class="gate__logo" src="assets/img/logo-theone-registry-dark.png" alt="The One Bali · Registry Collection Hotels">
+    <p class="eyebrow">Brochure oficial · The One Bali</p>
+    <h2 class="gate__title" id="lead-title">¿Te interesa The One Bali?</h2>
+    <p class="gate__text">Déjanos tu nombre completo, correo y teléfono: te enviamos toda la información y podrás descargar el brochure del proyecto.</p>
+    <div class="gate__form">
+      <iframe data-tally-src="https://tally.so/embed/8197Ql?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="200" frameborder="0" marginheight="0" marginwidth="0" title="THE ONE - Ronald"></iframe>
+    </div>
+    <div class="gate__done" hidden>
+      <i data-lucide="check"></i>
+      <h3>¡Gracias!</h3>
+      <p>Tu descarga empieza automáticamente. Si no, pulsa el botón.</p>
+      <a class="btn btn--accent" href="assets/brochure.pdf" download="The-One-Bali-Brochure.pdf"><i data-lucide="download"></i> Descargar brochure</a>
+    </div>
+    <p class="gate__note">Sin compromiso. Puedes cerrar esta ventana cuando quieras.</p>
+  </div>
+</div>
+
+<!-- ===================== VIDEO LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Vídeo">
+  <div class="lightbox__backdrop" data-close></div>
+  <div class="lightbox__frame">
+    <button class="lightbox__close" type="button" data-close aria-label="Cerrar"><i data-lucide="x"></i></button>
+    <div class="lightbox__video" id="lightbox-video"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.294.0/dist/umd/lucide.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

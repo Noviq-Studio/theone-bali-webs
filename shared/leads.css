@@ -1,0 +1,157 @@
+/* =====================================================================
+   THE ONE BALI — modal de captura de leads (base compartida)
+   Estructura y comportamiento idénticos en las 3 variantes.
+   Cada variante lo VISTE redefiniendo las custom properties --leadgate-*
+   en su propio CSS (después de este archivo).
+   ===================================================================== */
+:root {
+  --leadgate-backdrop:  rgba(11, 37, 69, .55);
+  --leadgate-blur:      10px;
+  --leadgate-bg:        #FFFFFF;
+  --leadgate-fg:        #2B2B2B;
+  --leadgate-muted:     #6F6F6F;
+  --leadgate-accent:    #E2482B;
+  --leadgate-accent-fg: #FFFFFF;
+  --leadgate-radius:    22px;
+  --leadgate-width:     560px;
+  --leadgate-pad:       clamp(24px, 4vw, 44px);
+  --leadgate-shadow:    0 30px 80px rgba(0, 0, 0, .28);
+  --leadgate-font:      inherit;
+  --leadgate-title-font: inherit;
+  --leadgate-ease:      cubic-bezier(.22, .61, .36, 1);
+}
+
+/* El scroll del fondo se bloquea mientras el modal está abierto. */
+body.is-locked { overflow: hidden; }
+
+.leadgate {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  font-family: var(--leadgate-font);
+}
+.leadgate[hidden] { display: none !important; }
+
+.leadgate__backdrop {
+  position: absolute;
+  inset: 0;
+  background: var(--leadgate-backdrop);
+  -webkit-backdrop-filter: blur(var(--leadgate-blur));
+  backdrop-filter: blur(var(--leadgate-blur));
+  animation: leadFade .32s var(--leadgate-ease) both;
+}
+
+.leadgate__panel {
+  position: relative;
+  width: min(var(--leadgate-width), 100%);
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: var(--leadgate-pad);
+  background: var(--leadgate-bg);
+  color: var(--leadgate-fg);
+  border-radius: var(--leadgate-radius);
+  box-shadow: var(--leadgate-shadow);
+  animation: leadIn .42s var(--leadgate-ease) both;
+}
+
+.leadgate__close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--leadgate-muted);
+  border-radius: 50%;
+  transition: background .2s, color .2s;
+}
+.leadgate__close:hover { background: rgba(0, 0, 0, .06); color: var(--leadgate-fg); }
+.leadgate__close:focus-visible { outline: 2px solid var(--leadgate-accent); outline-offset: 2px; }
+
+.leadgate__title {
+  font-family: var(--leadgate-title-font);
+  font-size: clamp(1.5rem, 3.4vw, 2rem);
+  line-height: 1.15;
+  margin: 0 0 12px;
+  padding-right: 44px;
+}
+.leadgate__text {
+  color: var(--leadgate-muted);
+  font-size: .97rem;
+  line-height: 1.6;
+  margin: 0 0 22px;
+}
+
+.leadgate__form iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  min-height: 230px;
+  color-scheme: light;   /* el iframe de Tally se renderiza siempre en claro */
+}
+
+.leadgate__done { text-align: center; padding: 8px 0 4px; }
+.leadgate__doneTitle {
+  font-family: var(--leadgate-title-font);
+  font-size: 1.35rem;
+  margin: 0 0 8px;
+}
+.leadgate__doneText { color: var(--leadgate-muted); font-size: .93rem; margin: 0 0 20px; }
+.leadgate__doneBtn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--leadgate-accent);
+  color: var(--leadgate-accent-fg);
+  border-radius: 999px;
+  font-size: .9rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  transition: transform .2s var(--leadgate-ease), opacity .2s;
+}
+.leadgate__doneBtn:hover { transform: translateY(-2px); opacity: .92; }
+
+@keyframes leadFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes leadIn {
+  from { opacity: 0; transform: translateY(22px) scale(.985); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .leadgate__backdrop, .leadgate__panel { animation: none; }
+  .leadgate__doneBtn:hover { transform: none; }
+}
+
+@media (max-width: 560px) {
+  .leadgate { padding: 0; place-items: end stretch; }
+  .leadgate__panel {
+    max-height: 92dvh;
+    border-radius: var(--leadgate-radius) var(--leadgate-radius) 0 0;
+    animation-name: leadUp;
+  }
+  @keyframes leadUp {
+    from { opacity: 0; transform: translateY(100%); }
+    to   { opacity: 1; transform: none; }
+  }
+}
+
+/* ---------- extras opcionales (logo y nota legal) ---------- */
+.leadgate__logo {
+  height: 42px;
+  width: auto;
+  margin: 0 0 20px;
+  object-fit: contain;
+}
+.leadgate__note {
+  margin: 18px 0 0;
+  font-size: .78rem;
+  line-height: 1.5;
+  color: var(--leadgate-muted);
+  opacity: .8;
+}
